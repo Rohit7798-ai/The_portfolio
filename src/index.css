@@ -1,0 +1,184 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Performance optimizations */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #ffffff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Optimize animations for performance */
+.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* GPU acceleration for frequently animated elements */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+/* Optimize images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Smooth scrolling improvements */
+html {
+  scroll-padding-top: 80px;
+}
+
+/* Performance-optimized gradients */
+.bg-gradient-to-br {
+  background-attachment: local;
+}
+
+/* Custom animations with hardware acceleration */
+@keyframes optimized-bounce {
+  0%, 20%, 53%, 80%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  40%, 43% {
+    transform: translate3d(0, -10px, 0);
+  }
+  70% {
+    transform: translate3d(0, -5px, 0);
+  }
+  90% {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+
+@keyframes optimized-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes optimized-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply optimized animations */
+.animate-bounce {
+  animation: optimized-bounce 1s infinite;
+}
+
+.animate-pulse {
+  animation: optimized-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-spin {
+  animation: optimized-spin 1s linear infinite;
+}
+
+/* Optimize backdrop blur */
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Optimize shadow rendering */
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Optimize text rendering */
+.text-forest-900,
+.text-forest-800,
+.text-forest-700,
+.text-forest-600 {
+  color: #0f172a;
+}
+
+.text-emerald-600 {
+  color: #059669;
+}
+
+.text-teal-600 {
+  color: #0d9488;
+}
+
+/* Background color optimizations */
+.bg-sage-50 {
+  background-color: #f8fafc;
+}
+
+.bg-emerald-50 {
+  background-color: #ecfdf5;
+}
+
+.bg-teal-50 {
+  background-color: #f0fdfa;
+}
+
+.bg-mint-50 {
+  background-color: #f0fdf9;
+}
+
+/* Content visibility for better rendering performance */
+.section-content {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+
+/* GPU acceleration utility */
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
