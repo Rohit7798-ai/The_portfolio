@@ -27,7 +27,6 @@ const Header = () => {
     { label: 'Home', href: '#home' },
     { label: 'About', href: '#about' },
     { label: 'Projects', href: '#portfolio' },
-    { label: 'Resume', href: '#resume' },
     { label: 'Contact', href: 'mailto:chavanrohit2213@gmail.com' },
   ];
 

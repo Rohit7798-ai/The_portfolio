@@ -6,7 +6,6 @@ import Hero from '../components/Hero';
 const About = lazy(() => import('../components/About'));
 const TechStack = lazy(() => import('../components/TechStack'));
 const Portfolio = lazy(() => import('../components/Portfolio'));
-const Resume = lazy(() => import('../components/Resume'));
 const Footer = lazy(() => import('../components/Footer'));
 const FloatingTechStack = lazy(() => import('../components/FloatingTechStack'));
 
@@ -31,9 +30,6 @@ const Index = () => {
       </Suspense>
       <Suspense fallback={<LoadingFallback />}>
         <Portfolio />
-      </Suspense>
-      <Suspense fallback={<LoadingFallback />}>
-        <Resume />
       </Suspense>
       <Suspense fallback={<LoadingFallback />}>
         <Footer />
