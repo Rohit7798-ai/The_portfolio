@@ -81,10 +81,7 @@ const Hero = React.memo(() => {
       behavior: 'smooth'
     });
   }, []);
-  
-  const handleDownloadResume = useCallback(() => {
-    window.open('https://drive.google.com/file/d/1FONQIYx1KXaGOO-buNLnr0Ylbj1df74R/view?usp=drive_link', '_blank');
-  }, []);
+
   
   return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-sage-50 via-emerald-50 to-teal-50 pt-20 sm:pt-16 lg:pt-0">
       
@@ -165,10 +162,10 @@ const Hero = React.memo(() => {
                     <span>View My Projects</span>
                     <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-bounce" />
                   </button>
-                  <button onClick={handleDownloadResume} className="group border-2 border-forest-600 text-forest-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-forest-600 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-105 hover:border-forest-700">
+                  <a href="/resume.pdf" download="Rohit_Chavan_Resume.pdf" className="group border-2 border-forest-600 text-forest-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-forest-600 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-105 hover:border-forest-700 cursor-pointer">
                     <span>Download Resume</span>
                     <Download className="w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-pulse" />
-                  </button>
+                  </a>
                 </div>
               </AnimateOnScroll>
               

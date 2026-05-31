@@ -55,235 +55,234 @@ const About = () => {
     description: 'Building strong work ethics through teamwork and continuous skill development.'
   }];
   return <section id="about" className="py-16 bg-gradient-to-br from-emerald-50 to-teal-50 relative overflow-hidden">
-      {/* Floating 3D Elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-10 w-16 h-16 bg-emerald-300 rounded-full opacity-20 animate-bounce will-change-transform" style={{
+    {/* Floating 3D Elements */}
+    <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute top-20 left-10 w-16 h-16 bg-emerald-300 rounded-full opacity-20 animate-bounce will-change-transform" style={{
         animationDelay: '0s',
         animationDuration: '3s'
       }}></div>
-        <div className="absolute top-40 right-20 w-12 h-12 bg-teal-400 rounded-lg opacity-30 animate-pulse will-change-opacity" style={{
+      <div className="absolute top-40 right-20 w-12 h-12 bg-teal-400 rounded-lg opacity-30 animate-pulse will-change-opacity" style={{
         animationDelay: '1s'
       }}></div>
-        <div className="absolute bottom-32 left-1/4 w-20 h-8 bg-sage-300 rounded-full opacity-25 animate-bounce will-change-transform" style={{
+      <div className="absolute bottom-32 left-1/4 w-20 h-8 bg-sage-300 rounded-full opacity-25 animate-bounce will-change-transform" style={{
         animationDelay: '2s',
         animationDuration: '4s'
       }}></div>
-        <div className="absolute top-1/3 right-10 w-6 h-6 bg-forest-400 rotate-45 opacity-20 animate-spin will-change-transform" style={{
+      <div className="absolute top-1/3 right-10 w-6 h-6 bg-forest-400 rotate-45 opacity-20 animate-spin will-change-transform" style={{
         animationDuration: '8s'
       }}></div>
+    </div>
+
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      {/* Section Header */}
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-forest-900 mb-3 animate-fade-in">About Rohit</h2>
+        <p className="text-xl text-forest-700 max-w-3xl mx-auto font-medium">
+          BSc Data Science student with hands-on experience in Python programming, data analysis, and statistical modeling
+        </p>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-forest-900 mb-3 animate-fade-in">About Rohit</h2>
-          <p className="text-xl text-forest-700 max-w-3xl mx-auto font-medium">
-            BSc Data Science student with hands-on experience in Python programming, data analysis, and statistical modeling
+      {/* Personal Story */}
+      <div className="grid lg:grid-cols-2 gap-8 mb-16">
+        <div className="relative group flex items-center justify-center">
+          <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full blur-2xl opacity-30 group-hover:opacity-40 transition-opacity duration-300"></div>
+          <div className="relative">
+            <LazyImage
+              src={profilePicture}
+              alt="Rohit P. Chavan"
+              loading="eager"
+              fetchPriority="high"
+              wrapperClassName="w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full border-4 border-white shadow-2xl overflow-hidden"
+              className="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-300 will-change-transform"
+            />
+          </div>
+        </div>
+
+        <div className="space-y-5">
+          <h3 className="text-2xl font-bold text-forest-900">My Journey in Data Science</h3>
+          <p className="text-base text-forest-700 leading-relaxed font-medium">
+            I'm a Data Science student at R.C. Patel Arts, Commerce and Science College, Shirpur, building expertise in Python, data analysis, and statistical modeling. I enjoy transforming raw data into clear, actionable insights and developing AI-driven solutions to real-world problems. With certifications in Python and IT, along with a track record of hands-on projects, I aim to contribute wherever data and technology can make a difference.
           </p>
-        </div>
 
-        {/* Personal Story */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
-          <div className="relative group flex items-center justify-center">
-            <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full blur-2xl opacity-30 group-hover:opacity-40 transition-opacity duration-300"></div>
-            <div className="relative">
-              <LazyImage
-                src={profilePicture}
-                alt="Rohit P. Chavan"
-                loading="eager"
-                fetchPriority="high"
-                wrapperClassName="w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full border-4 border-white shadow-2xl overflow-hidden"
-                className="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-300 will-change-transform"
-              />
+          {/* Contact Info */}
+          <div className="bg-white/70 backdrop-blur-sm rounded-xl p-4 space-y-2 border border-emerald-100">
+            <div className="flex items-center gap-2 text-forest-700 font-medium">
+              <span>📧</span>
+              <span>chavanrohit2213@gmail.com</span>
+            </div>
+            <div className="flex items-center gap-2 text-forest-700 font-medium">
+              <span>📍</span>
+              <span>Maharashtra, India</span>
             </div>
           </div>
-          
-          <div className="space-y-5">
-            <h3 className="text-2xl font-bold text-forest-900">My Journey in Data Science</h3>
-            <p className="text-base text-forest-700 leading-relaxed font-medium">
-              I'm a Data Science student at R.C. Patel Arts, Commerce and Science College, Shirpur, building expertise in Python, data analysis, and statistical modeling. I enjoy transforming raw data into clear, actionable insights and developing AI-driven solutions to real-world problems. With certifications in Python and IT, along with a track record of hands-on projects, I aim to contribute wherever data and technology can make a difference.
-            </p>
-            
-            {/* Contact Info */}
-            <div className="bg-white/70 backdrop-blur-sm rounded-xl p-4 space-y-2 border border-emerald-100">
-              <div className="flex items-center gap-2 text-forest-700 font-medium">
-                <span>📧</span>
-                <span>chavanrohit2213@gmail.com</span>
-              </div>
-              <div className="flex items-center gap-2 text-forest-700 font-medium">
-                <span>📍</span>
-                <span>Shirpur, Maharashtra, India</span>
-              </div>
-            </div>
-            
-            {/* Skills */}
-                   
-            <a 
-              href="/Rohit_Chavan_Resume.pdf" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex bg-gradient-to-r from-forest-700 to-emerald-700 text-white px-6 py-3 rounded-xl hover:from-forest-800 hover:to-emerald-800 transition-all duration-300 items-center gap-2 transform hover:scale-105 will-change-transform font-semibold cursor-pointer"
-            >
-              Download Resume
-              <span>📄</span>
-            </a>
-          </div>
+
+          {/* Skills */}
+
+          <a
+            href="/resume.pdf"
+            download="Rohit_Chavan_Resume.pdf"
+            className="inline-flex bg-gradient-to-r from-forest-700 to-emerald-700 text-white px-6 py-3 rounded-xl hover:from-forest-800 hover:to-emerald-800 transition-all duration-300 items-center gap-2 transform hover:scale-105 will-change-transform font-semibold cursor-pointer"
+          >
+            Download Resume
+            <span>📄</span>
+          </a>
         </div>
-
-        {/* Education & Experience Timeline */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-forest-900 text-center mb-12">Education & Experience Timeline</h3>
-          <div className="relative bg-gradient-to-br from-mint-50 to-teal-50 rounded-3xl p-8 overflow-hidden">
-            {/* Curved roadmap path */}
-            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 800 400" preserveAspectRatio="none">
-              <path
-                d="M 100 350 Q 200 200 400 250 Q 600 300 700 150"
-                stroke="url(#roadmapGradient)"
-                strokeWidth="4"
-                fill="none"
-                strokeDasharray="0"
-                className="drop-shadow-sm"
-              />
-              <defs>
-                <linearGradient id="roadmapGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="#10b981" />
-                  <stop offset="50%" stopColor="#14b8a6" />
-                  <stop offset="100%" stopColor="#06b6d4" />
-                </linearGradient>
-              </defs>
-            </svg>
-
-            {/* Timeline cards */}
-            <div className="relative z-10 grid lg:grid-cols-3 gap-8 lg:gap-12">
-              {timeline.map((item, index) => {
-                const icons = ['🎓', '💼', '💻'];
-                const iconComponents = [
-                  <div key="grad" className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">🎓</div>,
-                  <div key="brief" className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">💼</div>,
-                  <div key="laptop" className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">💻</div>
-                ];
-                
-                return (
-                  <div 
-                    key={index} 
-                    className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 border border-white/20 group"
-                    style={{
-                      marginTop: index === 1 ? '3rem' : index === 2 ? '1rem' : '0'
-                    }}
-                  >
-                    {/* Icon */}
-                    <div className="flex justify-center mb-4 transform group-hover:scale-110 transition-transform duration-300 will-change-transform">
-                      {iconComponents[index]}
-                    </div>
-                    
-                    {/* Year badge */}
-                    <div className="text-center mb-3">
-                      <span className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg">
-                        {item.year}
-                      </span>
-                    </div>
-                    
-                    {/* Content */}
-                    <div className="text-center">
-                      <h4 className="text-xl font-bold text-forest-900 mb-2">{item.title}</h4>
-                      <div className="text-emerald-600 font-semibold text-sm mb-3">{item.company}</div>
-                      <p className="text-forest-700 text-sm leading-relaxed font-medium">{item.description}</p>
-                    </div>
-                    
-                    {/* Connecting dot */}
-                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full border-2 border-white shadow-lg opacity-80"></div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-
-        {/* Certifications */}
-        <div>
-          <h3 className="text-2xl font-bold text-forest-900 text-center mb-8">Certifications</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
-              <LazyImage
-                src="/lovable-uploads/1a2a8169-37d1-4ec7-adaf-7d303df90df3.webp"
-                alt="Kaggle Pandas certificate for Rohit Chavan"
-                className="w-full h-auto rounded-lg border border-emerald-100"
-                wrapperClassName="aspect-[800/492] w-full"
-              />
-              <div className="mt-3">
-                <h4 className="text-lg font-semibold text-forest-900 mb-1">Kaggle: Pandas</h4>
-                <p className="text-forest-700 text-sm font-medium">Certificate of Completion</p>
-              </div>
-            </div>
-
-            <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
-              <LazyImage
-                src="/lovable-uploads/97c2e73b-64d8-4c48-8966-0dad4b39046f.webp"
-                alt="Deloitte Data Analytics Job Simulation certificate for Rohit Chavan"
-                className="w-full h-auto rounded-lg border border-emerald-100"
-                wrapperClassName="aspect-[800/565] w-full"
-              />
-              <div className="mt-3">
-                <h4 className="text-lg font-semibold text-forest-900 mb-1">Deloitte: Data Analytics Job Simulation</h4>
-                <p className="text-forest-700 text-sm font-medium">Certificate of Completion</p>
-              </div>
-            </div>
-
-            <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
-              <LazyImage
-                src="/lovable-uploads/ea446889-743c-4bf0-a5c0-5eb1f6d13945.webp"
-                alt="Kaggle Intro to Machine Learning certificate for Rohit Chavan"
-                className="w-full h-auto rounded-lg border border-emerald-100"
-                wrapperClassName="aspect-[800/492] w-full"
-              />
-              <div className="mt-3">
-                <h4 className="text-lg font-semibold text-forest-900 mb-1">Kaggle: Intro to Machine Learning</h4>
-                <p className="text-forest-700 text-sm font-medium">Certificate of Completion</p>
-              </div>
-            </div>
-
-            <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
-              <LazyImage
-                src="/lovable-uploads/02d315cf-bd78-4452-a30b-8dfdcf9c960e.webp"
-                alt="MKCL Certificate in Python (KLIC Python) for Chavan Rohit Prabhu"
-                className="w-full h-auto rounded-lg border border-emerald-100"
-                wrapperClassName="aspect-[618/800] w-full"
-              />
-              <div className="mt-3">
-                <h4 className="text-lg font-semibold text-forest-900 mb-1">MKCL Certified Python Expert</h4>
-                <p className="text-forest-700 text-sm font-medium">Knowledge Lit Careers Certificate Course</p>
-              </div>
-            </div>
-
-            <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
-              <LazyImage
-                src="/lovable-uploads/18e43224-4f3c-4f3d-b078-7e960ffff96c.webp"
-                alt="MKCL Maharashtra Olympiad Movement 2015 Standard 5 certificate for Chavan Rohit Prabhu"
-                className="w-full h-auto rounded-lg border border-emerald-100"
-                wrapperClassName="aspect-[578/800] w-full"
-              />
-              <div className="mt-3">
-                <h4 className="text-lg font-semibold text-forest-900 mb-1">Maharashtra Olympiad Movement 2015</h4>
-                <p className="text-forest-700 text-sm font-medium">Standard 5 Science Olympiad Participation Certificate</p>
-              </div>
-            </div>
-
-            <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
-              <LazyImage
-                src="/lovable-uploads/collegetips-internship-offer-letter.webp"
-                alt="CollegeTips.in Summer Internship Program 2025 Offer Letter for Rohit Chavan"
-                className="w-full h-auto rounded-lg border border-emerald-100"
-                wrapperClassName="aspect-[566/800] w-full"
-              />
-              <div className="mt-3">
-                <h4 className="text-lg font-semibold text-forest-900 mb-1">CollegeTips.in: Summer Internship 2025</h4>
-                <p className="text-forest-700 text-sm font-medium">Internship Offer Letter</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </section>;
+
+      {/* Education & Experience Timeline */}
+      <div className="mb-16">
+        <h3 className="text-2xl font-bold text-forest-900 text-center mb-12">Education & Experience Timeline</h3>
+        <div className="relative bg-gradient-to-br from-mint-50 to-teal-50 rounded-3xl p-8 overflow-hidden">
+          {/* Curved roadmap path */}
+          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 800 400" preserveAspectRatio="none">
+            <path
+              d="M 100 350 Q 200 200 400 250 Q 600 300 700 150"
+              stroke="url(#roadmapGradient)"
+              strokeWidth="4"
+              fill="none"
+              strokeDasharray="0"
+              className="drop-shadow-sm"
+            />
+            <defs>
+              <linearGradient id="roadmapGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="#10b981" />
+                <stop offset="50%" stopColor="#14b8a6" />
+                <stop offset="100%" stopColor="#06b6d4" />
+              </linearGradient>
+            </defs>
+          </svg>
+
+          {/* Timeline cards */}
+          <div className="relative z-10 grid lg:grid-cols-3 gap-8 lg:gap-12">
+            {timeline.map((item, index) => {
+              const icons = ['🎓', '💼', '💻'];
+              const iconComponents = [
+                <div key="grad" className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">🎓</div>,
+                <div key="brief" className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">💼</div>,
+                <div key="laptop" className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">💻</div>
+              ];
+
+              return (
+                <div
+                  key={index}
+                  className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 border border-white/20 group"
+                  style={{
+                    marginTop: index === 1 ? '3rem' : index === 2 ? '1rem' : '0'
+                  }}
+                >
+                  {/* Icon */}
+                  <div className="flex justify-center mb-4 transform group-hover:scale-110 transition-transform duration-300 will-change-transform">
+                    {iconComponents[index]}
+                  </div>
+
+                  {/* Year badge */}
+                  <div className="text-center mb-3">
+                    <span className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg">
+                      {item.year}
+                    </span>
+                  </div>
+
+                  {/* Content */}
+                  <div className="text-center">
+                    <h4 className="text-xl font-bold text-forest-900 mb-2">{item.title}</h4>
+                    <div className="text-emerald-600 font-semibold text-sm mb-3">{item.company}</div>
+                    <p className="text-forest-700 text-sm leading-relaxed font-medium">{item.description}</p>
+                  </div>
+
+                  {/* Connecting dot */}
+                  <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full border-2 border-white shadow-lg opacity-80"></div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      {/* Certifications */}
+      <div>
+        <h3 className="text-2xl font-bold text-forest-900 text-center mb-8">Certifications</h3>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
+            <LazyImage
+              src="/lovable-uploads/1a2a8169-37d1-4ec7-adaf-7d303df90df3.webp"
+              alt="Kaggle Pandas certificate for Rohit Chavan"
+              className="w-full h-auto rounded-lg border border-emerald-100"
+              wrapperClassName="aspect-[800/492] w-full"
+            />
+            <div className="mt-3">
+              <h4 className="text-lg font-semibold text-forest-900 mb-1">Kaggle: Pandas</h4>
+              <p className="text-forest-700 text-sm font-medium">Certificate of Completion</p>
+            </div>
+          </div>
+
+          <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
+            <LazyImage
+              src="/lovable-uploads/97c2e73b-64d8-4c48-8966-0dad4b39046f.webp"
+              alt="Deloitte Data Analytics Job Simulation certificate for Rohit Chavan"
+              className="w-full h-auto rounded-lg border border-emerald-100"
+              wrapperClassName="aspect-[800/565] w-full"
+            />
+            <div className="mt-3">
+              <h4 className="text-lg font-semibold text-forest-900 mb-1">Deloitte: Data Analytics Job Simulation</h4>
+              <p className="text-forest-700 text-sm font-medium">Certificate of Completion</p>
+            </div>
+          </div>
+
+          <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
+            <LazyImage
+              src="/lovable-uploads/ea446889-743c-4bf0-a5c0-5eb1f6d13945.webp"
+              alt="Kaggle Intro to Machine Learning certificate for Rohit Chavan"
+              className="w-full h-auto rounded-lg border border-emerald-100"
+              wrapperClassName="aspect-[800/492] w-full"
+            />
+            <div className="mt-3">
+              <h4 className="text-lg font-semibold text-forest-900 mb-1">Kaggle: Intro to Machine Learning</h4>
+              <p className="text-forest-700 text-sm font-medium">Certificate of Completion</p>
+            </div>
+          </div>
+
+          <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
+            <LazyImage
+              src="/lovable-uploads/02d315cf-bd78-4452-a30b-8dfdcf9c960e.webp"
+              alt="MKCL Certificate in Python (KLIC Python) for Chavan Rohit Prabhu"
+              className="w-full h-auto rounded-lg border border-emerald-100"
+              wrapperClassName="aspect-[618/800] w-full"
+            />
+            <div className="mt-3">
+              <h4 className="text-lg font-semibold text-forest-900 mb-1">MKCL Certified Python Expert</h4>
+              <p className="text-forest-700 text-sm font-medium">Knowledge Lit Careers Certificate Course</p>
+            </div>
+          </div>
+
+          <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
+            <LazyImage
+              src="/lovable-uploads/18e43224-4f3c-4f3d-b078-7e960ffff96c.webp"
+              alt="MKCL Maharashtra Olympiad Movement 2015 Standard 5 certificate for Chavan Rohit Prabhu"
+              className="w-full h-auto rounded-lg border border-emerald-100"
+              wrapperClassName="aspect-[578/800] w-full"
+            />
+            <div className="mt-3">
+              <h4 className="text-lg font-semibold text-forest-900 mb-1">Maharashtra Olympiad Movement 2015</h4>
+              <p className="text-forest-700 text-sm font-medium">Standard 5 Science Olympiad Participation Certificate</p>
+            </div>
+          </div>
+
+          <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
+            <LazyImage
+              src="/lovable-uploads/collegetips-internship-offer-letter.webp"
+              alt="CollegeTips.in Summer Internship Program 2025 Offer Letter for Rohit Chavan"
+              className="w-full h-auto rounded-lg border border-emerald-100"
+              wrapperClassName="aspect-[566/800] w-full"
+            />
+            <div className="mt-3">
+              <h4 className="text-lg font-semibold text-forest-900 mb-1">CollegeTips.in: Summer Internship 2025</h4>
+              <p className="text-forest-700 text-sm font-medium">Internship Offer Letter</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>;
 };
 export default memo(About);
