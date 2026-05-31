@@ -40,7 +40,7 @@ const TechStack = () => {
       skills: [
         { name: 'Jupyter', icon: '📓', proficiency: 90 },
         { name: 'Git', icon: '🔧', proficiency: 80 },
-        { name: 'VS Code', icon: '💾', proficiency: 85 },
+        { name: 'Google Colab', icon: '♾️', proficiency: 85 },
         { name: 'Streamlit', icon: '🚀', proficiency: 75 }
       ]
     }
