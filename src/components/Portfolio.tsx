@@ -29,7 +29,7 @@ const Portfolio = memo(() => {
       id: 1,
       title: 'Netflix Data Analysis Project',
       category: 'data-science',
-      image: '/lovable-uploads/1b1a06e0-9aff-45c7-a7e7-e9a02971cb69.webp',
+      image: '/uploads/1b1a06e0-9aff-45c7-a7e7-e9a02971cb69.webp',
       description: 'Netflix Data Analysis Project | Jun 2025 – Jul 2025. Analysis of Netflix content growth over time, popular genres and countries, clear dominance of Movies over TV Shows, and key content contributors (e.g., US, India)',
       technologies: ['Python', 'Pandas', 'Matplotlib', 'Seaborn', 'Jupyter'],
       year: '2025'

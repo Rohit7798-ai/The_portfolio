@@ -209,7 +209,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
               <LazyImage
-                src="/lovable-uploads/1a2a8169-37d1-4ec7-adaf-7d303df90df3.webp"
+                src="/uploads/1a2a8169-37d1-4ec7-adaf-7d303df90df3.webp"
                 alt="Kaggle Pandas certificate for Rohit Chavan"
                 className="w-full h-auto rounded-lg border border-emerald-100"
                 wrapperClassName="aspect-[800/492] w-full"
@@ -222,7 +222,7 @@ const About = () => {
 
             <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
               <LazyImage
-                src="/lovable-uploads/97c2e73b-64d8-4c48-8966-0dad4b39046f.webp"
+                src="/uploads/97c2e73b-64d8-4c48-8966-0dad4b39046f.webp"
                 alt="Deloitte Data Analytics Job Simulation certificate for Rohit Chavan"
                 className="w-full h-auto rounded-lg border border-emerald-100"
                 wrapperClassName="aspect-[800/565] w-full"
@@ -235,7 +235,7 @@ const About = () => {
 
             <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
               <LazyImage
-                src="/lovable-uploads/ea446889-743c-4bf0-a5c0-5eb1f6d13945.webp"
+                src="/uploads/ea446889-743c-4bf0-a5c0-5eb1f6d13945.webp"
                 alt="Kaggle Intro to Machine Learning certificate for Rohit Chavan"
                 className="w-full h-auto rounded-lg border border-emerald-100"
                 wrapperClassName="aspect-[800/492] w-full"
@@ -248,7 +248,7 @@ const About = () => {
 
             <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
               <LazyImage
-                src="/lovable-uploads/02d315cf-bd78-4452-a30b-8dfdcf9c960e.webp"
+                src="/uploads/02d315cf-bd78-4452-a30b-8dfdcf9c960e.webp"
                 alt="MKCL Certificate in Python (KLIC Python) for Chavan Rohit Prabhu"
                 className="w-full h-auto rounded-lg border border-emerald-100"
                 wrapperClassName="aspect-[618/800] w-full"
@@ -261,20 +261,7 @@ const About = () => {
 
             <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
               <LazyImage
-                src="/lovable-uploads/18e43224-4f3c-4f3d-b078-7e960ffff96c.webp"
-                alt="MKCL Maharashtra Olympiad Movement 2015 Standard 5 certificate for Chavan Rohit Prabhu"
-                className="w-full h-auto rounded-lg border border-emerald-100"
-                wrapperClassName="aspect-[578/800] w-full"
-              />
-              <div className="mt-3">
-                <h4 className="text-lg font-semibold text-forest-900 mb-1">Maharashtra Olympiad Movement 2015</h4>
-                <p className="text-forest-700 text-sm font-medium">Standard 5 Science Olympiad Participation Certificate</p>
-              </div>
-            </div>
-
-            <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
-              <LazyImage
-                src="/lovable-uploads/collegetips-internship-offer-letter.webp"
+                src="/uploads/collegetips-internship-offer-letter.webp"
                 alt="CollegeTips.in Summer Internship Program 2025 Offer Letter for Rohit Chavan"
                 className="w-full h-auto rounded-lg border border-emerald-100"
                 wrapperClassName="aspect-[566/800] w-full"
