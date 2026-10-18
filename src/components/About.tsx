@@ -24,8 +24,13 @@ const About = () => {
   }];
 
   const timeline = [{
+    year: '2026 - 2028',
+    title: 'Master of Computer Applications (MCA)',
+    company: 'Institute of Management Research and Development, Shirpur',
+    description: 'Advanced studies in computer applications, distributed architectures, software engineering, and large-scale data science solutions.'
+  }, {
     year: '2023 - 2026',
-    title: 'BSc Data Science (Expected)',
+    title: 'BSc Data Science',
     company: 'Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon',
     description: 'Relevant Coursework: Machine Learning, Statistical Analysis, Database Management, Data Structures, Algorithms'
   }, {
@@ -106,7 +111,7 @@ const About = () => {
           <div className="space-y-5">
             <h3 className="text-2xl font-bold text-forest-900">My Journey in Data Science</h3>
             <p className="text-base text-forest-700 leading-relaxed font-medium">
-              I'm a Data Science student at R.C. Patel Arts, Commerce and Science College, Shirpur, building expertise in Python, data analysis, and statistical modeling. I enjoy transforming raw data into clear, actionable insights and developing AI-driven solutions to real-world problems. With certifications in Python and IT, along with a track record of hands-on projects, I aim to contribute wherever data and technology can make a difference.
+              I'm a MCA student at Institute of Management Research and Development, Shirpur, building expertise in Python, data analysis, and statistical modeling. I enjoy transforming raw data into clear, actionable insights and developing AI-driven solutions to real-world problems. With certifications in Python and IT, along with a track record of hands-on projects, I aim to contribute wherever data and technology can make a difference.
             </p>
             
             {/* Contact Info */}
@@ -158,10 +163,10 @@ const About = () => {
             </svg>
 
             {/* Timeline cards */}
-            <div className="relative z-10 grid lg:grid-cols-3 gap-8 lg:gap-12">
+            <div className="relative z-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {timeline.map((item, index) => {
-                const icons = ['🎓', '💼', '💻'];
                 const iconComponents = [
+                  <div key="mca" className="w-12 h-12 bg-gradient-to-br from-teal-500 to-emerald-600 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">🏛️</div>,
                   <div key="grad" className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">🎓</div>,
                   <div key="brief" className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">💼</div>,
                   <div key="laptop" className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">💻</div>
@@ -170,28 +175,30 @@ const About = () => {
                 return (
                   <div 
                     key={index} 
-                    className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 border border-white/20 group"
+                    className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 border border-white/20 group flex flex-col justify-between"
                     style={{
-                      marginTop: index === 1 ? '3rem' : index === 2 ? '1rem' : '0'
+                      marginTop: index === 1 || index === 3 ? '1.5rem' : '0'
                     }}
                   >
-                    {/* Icon */}
-                    <div className="flex justify-center mb-4 transform group-hover:scale-110 transition-transform duration-300 will-change-transform">
-                      {iconComponents[index]}
-                    </div>
-                    
-                    {/* Year badge */}
-                    <div className="text-center mb-3">
-                      <span className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg">
-                        {item.year}
-                      </span>
-                    </div>
-                    
-                    {/* Content */}
-                    <div className="text-center">
-                      <h4 className="text-xl font-bold text-forest-900 mb-2">{item.title}</h4>
-                      <div className="text-emerald-600 font-semibold text-sm mb-3">{item.company}</div>
-                      <p className="text-forest-700 text-sm leading-relaxed font-medium">{item.description}</p>
+                    <div>
+                      {/* Icon */}
+                      <div className="flex justify-center mb-4 transform group-hover:scale-110 transition-transform duration-300 will-change-transform">
+                        {iconComponents[index % iconComponents.length]}
+                      </div>
+                      
+                      {/* Year badge */}
+                      <div className="text-center mb-3">
+                        <span className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg">
+                          {item.year}
+                        </span>
+                      </div>
+                      
+                      {/* Content */}
+                      <div className="text-center">
+                        <h4 className="text-xl font-bold text-forest-900 mb-2">{item.title}</h4>
+                        <div className="text-emerald-600 font-semibold text-sm mb-3">{item.company}</div>
+                        <p className="text-forest-700 text-sm leading-relaxed font-medium">{item.description}</p>
+                      </div>
                     </div>
                     
                     {/* Connecting dot */}
@@ -246,18 +253,6 @@ const About = () => {
               </div>
             </div>
 
-            <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
-              <LazyImage
-                src="/uploads/02d315cf-bd78-4452-a30b-8dfdcf9c960e.webp"
-                alt="MKCL Certificate in Python (KLIC Python) for Chavan Rohit Prabhu"
-                className="w-full h-auto rounded-lg border border-emerald-100"
-                wrapperClassName="aspect-[618/800] w-full"
-              />
-              <div className="mt-3">
-                <h4 className="text-lg font-semibold text-forest-900 mb-1">MKCL Certified Python Expert</h4>
-                <p className="text-forest-700 text-sm font-medium">Knowledge Lit Careers Certificate Course</p>
-              </div>
-            </div>
 
             <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
               <LazyImage

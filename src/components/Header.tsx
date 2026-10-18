@@ -21,7 +21,7 @@ const Header = () => {
     } else {
       document.documentElement.classList.remove('dark');
     }
-  }, []);
+  }, [isDarkMode]);
 
   const navItems = [
     { label: 'Home', href: '#home' },

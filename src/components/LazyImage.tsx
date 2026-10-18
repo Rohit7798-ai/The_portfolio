@@ -63,7 +63,7 @@ const LazyImage: React.FC<LazyImageProps> = ({
           isLoaded ? 'opacity-100' : 'opacity-0'
         }`}
         loading={loading}
-        fetchPriority={fetchPriority}
+        {...(fetchPriority ? { fetchpriority: fetchPriority } : {})}
         onLoad={() => setIsLoaded(true)}
         decoding="async"
         width={width}

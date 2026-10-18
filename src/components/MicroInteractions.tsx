@@ -41,6 +41,7 @@ const AnimateOnScroll = ({
       observer.observe(currentRef);
     }
 
+    const timeouts = timeoutsRef.current;
     return () => {
       if (currentRef) {
         observer.unobserve(currentRef);
@@ -48,8 +49,8 @@ const AnimateOnScroll = ({
       observer.disconnect();
       
       // Clear all timeouts
-      timeoutsRef.current.forEach(timeoutId => clearTimeout(timeoutId));
-      timeoutsRef.current.clear();
+      timeouts.forEach(timeoutId => clearTimeout(timeoutId));
+      timeouts.clear();
     };
   }, [handleIntersection]);
 

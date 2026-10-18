@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import AnimatedProjectCard from './AnimatedProjectCard';
+import AnimatedProjectCard, { Project } from './AnimatedProjectCard';
 import AnimateOnScroll from './MicroInteractions';
 import studentPerformanceDashboard from '../assets/student-performance-dashboard.webp';
 import bitcoinSentimentAnalysis from '../assets/bitcoin-sentiment-analysis.webp';
@@ -14,7 +14,33 @@ import luminaViz from '../assets/luminaviz.webp';
 const Portfolio = memo(() => {
   // Component for displaying academic projects without filtering
 
-  const projects = [
+  const projects: Project[] = [
+    {
+      id: 11,
+      title: 'MediBot - Medical RAG Assistant',
+      category: 'AI & Machine Learning',
+      image: '/medibot-cover.webp',
+      description: 'An AI-powered medical assistant application built with Retrieval-Augmented Generation (RAG). It provides accurate, context-grounded answers to medical queries based on reference literature (The Gale Encyclopedia of Medicine) using LangChain, Hugging Face models, FAISS vector search, and Streamlit.',
+      technologies: ['Python', 'RAG', 'LangChain', 'Llama 3.1 8B', 'FAISS', 'Hugging Face', 'Streamlit', 'MiniLM-L6-v2'],
+      year: '2025',
+      github: 'https://github.com/Rohit7798-ai/medibot',
+      features: [
+        'Retrieval-Augmented Generation: Retrieves relevant reference passages before generating answers to minimize hallucination.',
+        'Document Ingestion Pipeline: Automatically parses PDF medical texts, splits them into semantic chunks, and creates vector embeddings.',
+        'Vector Store Search: Uses FAISS (Facebook AI Similarity Search) with Sentence Transformers for fast similarity lookup.',
+        'LLM Integration: Uses Meta Llama 3.1 8B Instruct through Hugging Face endpoints for natural language responses.',
+        'Streamlit Web Interface: Interactive chat UI with conversational history and reference source citations with page numbers.',
+        'Command-Line Testing: Standalone terminal interface to test retrieval and prompt chains directly.'
+      ],
+      architecture: [
+        { name: 'Ingestion', detail: 'Raw medical reference documents (PDFs) are loaded using LangChain\'s DirectoryLoader and PyPDFLoader.' },
+        { name: 'Chunking', detail: 'Text is split into overlapping chunks (500 characters chunk size, 50 characters overlap) using RecursiveCharacterTextSplitter.' },
+        { name: 'Embedding', detail: 'Text chunks are converted to numerical vector representations using sentence-transformers/all-MiniLM-L6-v2.' },
+        { name: 'Indexing', detail: 'Vector representations are stored locally in a serialized FAISS index.' },
+        { name: 'Retrieval & Generation', detail: 'When a query is received, top-k relevant context chunks are fetched and passed with the query into Llama 3.1 8B Instruct via a custom prompt template.' }
+      ],
+      disclaimer: 'This software is for educational, research, and informational purposes only. It is not intended as a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of a qualified physician or healthcare provider with any medical questions.'
+    },
     {
       id: 10,
       title: 'LuminaViz - Interactive Analytics Dashboard',
