@@ -214,7 +214,22 @@ const About = () => {
         <div>
           <h3 className="text-2xl font-bold text-forest-900 text-center mb-8">Certifications</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
+            <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100 flex flex-col justify-between">
+              <div>
+                <LazyImage
+                  src="/uploads/data-cleaning-and-preprocessing-with-pandas-365.webp"
+                  alt="365 Data Science Data Cleaning and Preprocessing with pandas certificate for Rohit Chavan"
+                  className="w-full h-auto rounded-lg border border-emerald-100"
+                  wrapperClassName="aspect-[3840/2700] w-full"
+                />
+                <div className="mt-3">
+                  <h4 className="text-lg font-semibold text-forest-900 mb-1">365 Data Science: Data Cleaning and Preprocessing with pandas</h4>
+                  <p className="text-forest-700 text-sm font-medium">Certificate of Achievement • 5 CPE Credits</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/70 backdrop-blur-sm p-5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100 flex flex-col justify-between">
               <LazyImage
                 src="/uploads/1a2a8169-37d1-4ec7-adaf-7d303df90df3.webp"
                 alt="Kaggle Pandas certificate for Rohit Chavan"
